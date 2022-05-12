@@ -1,0 +1,115 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.swasi.setup"
+        minSdk Versions.minSdk
+        targetSdk Versions.targetSdk
+        versionCode Versions.versionCode
+        versionName Versions.versionName
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            versionNameSuffix "-debug"
+            debuggable true
+        }
+        qa {
+            minifyEnabled false
+            versionNameSuffix "-beta"
+            debuggable false
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    // Product Flavours
+    flavorDimensions 'swasi'
+    productFlavors {
+        silverFlavors {
+            applicationId "com.swasi.silver"
+            dimension "swasi"
+            versionCode 1
+            versionName "1.0"
+        }
+        goldFlavors {
+            applicationId "com.swasi.gold"
+            dimension "swasi"
+            versionCode 1
+            versionName "1.0"
+        }
+        diamondFlavors {
+            applicationId "com.swasi.home_icon"
+            dimension "swasi"
+            versionCode 1
+            versionName "1.0"
+        }
+    }
+
+    sourceSets {
+        silverFlavors {
+            resources {
+                srcDirs('src/silverFlavors/res')
+            }
+            java {
+                srcDirs('src/silverFlavors/java')
+            }
+            kotlin {
+                srcDirs('src/silverFlavors/kotlin')
+            }
+        }
+        goldFlavors {
+            resources {
+                srcDirs('src/goldFlavors/res')
+            }
+            java {
+                srcDirs('src/goldFlavors/java')
+            }
+            kotlin {
+                srcDirs('src/goldFlavors/kotlin')
+            }
+        }
+        diamondFlavors {
+            resources {
+                srcDirs('src/diamondFlavors/res')
+            }
+            java {
+                srcDirs('src/diamondFlavors/java')
+            }
+            kotlin {
+                srcDirs('src/diamondFlavors/kotlin')
+            }
+        }
+    }
+
+}
+
+dependencies {
+    //  std lib
+    //  implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    //  app libs
+    implementation(AppDependencies.appLibraries)
+    //  test libs
+    testImplementation(AppDependencies.testLibraries)
+    androidTestImplementation(AppDependencies.androidTestLibraries)
+}
