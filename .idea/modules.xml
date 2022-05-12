@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_Setup.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_Setup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Android_Setup.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Android_Setup.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Android_Setup.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Android_Setup.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Android_Setup.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Android_Setup.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Android_Setup.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Android_Setup.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_Setup.buildSrc.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_Setup.buildSrc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_Setup.buildSrc.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_Setup.buildSrc.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_Setup.buildSrc.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_Setup.buildSrc.test.iml" />
+    </modules>
+  </component>
+</project>

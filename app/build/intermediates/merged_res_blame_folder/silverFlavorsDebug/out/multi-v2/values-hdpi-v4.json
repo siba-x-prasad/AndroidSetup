@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.swasi.setup.app-mergeSilverFlavorsDebugResources-24:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "/Users/sibaprasad/.gradle/caches/transforms-3/9c0a59f1bc61e85cb415c245b7d17128/transformed/appcompat-1.3.0/res/values-hdpi-v4/values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}
