@@ -1,0 +1,12 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># AndroidSetup\nIt's contain's project setup including gradle and flavor set up\n
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	
++++ b/README.md	
+@@ -1,2 +1,2 @@
+ # AndroidSetup
+-It's contain's project setup including gradle and flavor set up
++It's contains project setup including gradle and flavor set up
